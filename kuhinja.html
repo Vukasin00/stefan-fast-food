@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="sr" data-tenant="stefan">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="Portal za kuhinju — Stefan" />
+    <meta name="theme-color" content="#232122" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Kuhinja" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="/stefan-fast-food/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/stefan-fast-food/apple-touch-icon.png" />
+    <!-- The kitchen's own manifest, in the HTML from the start: iOS Safari reads the manifest link when the page loads and
+         ignores a later change by the app, so a dynamically swapped link made "Add to Home Screen" install the customer app. -->
+    <link rel="manifest" href="/stefan-fast-food/manifest-kuhinja.webmanifest" />
+    <title>Kuhinja · Stefan</title>
+    <style>
+      /* Splash painted before the JS bundle arrives: the kitchen is dark, so the splash is too. */
+      html, body, #root { height: 100%; margin: 0; }
+      body { background: #232122; }
+      .splash { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: var(--color-cream-100, #fff); }
+      .splash-name { font-family: var(--font-display, sans-serif); font-weight: var(--display-weight, 400); font-size: calc(40px * var(--display-scale, 1)); letter-spacing: var(--display-tracking, 0.02em); text-transform: var(--display-case, none); }
+      .splash-sub { font: 600 12px -apple-system, BlinkMacSystemFont, system-ui, sans-serif; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.55; }
+    </style>
+  <style id="tenant-theme">
+ html[data-tenant="stefan"] {
+  --color-cream-50: #FFFFFF;
+  --color-cream-100: #F4F7F5;
+  --color-cream-200: #E8EEEA;
+  --color-cream-300: #D5DED8;
+  --color-cream-400: #AEBAB3;
+  --color-azure-100: #DDF6EC;
+  --color-azure-200: #7FE0BF;
+  --color-azure-300: #0AC78E;
+  --color-azure-400: #07AE7C;
+  --color-on-primary: #1D1B1C;
+  --color-forest-950: #141314;
+  --color-forest-900: #232122;
+  --color-forest-800: #2B292A;
+  --color-forest-700: #353334;
+  --color-forest-600: #4D4B4C;
+  --color-forest-500: #6B696A;
+  --color-forest-400: #8C8A8B;
+  --color-flame-100: #E9E8E8;
+  --color-flame-200: #C8C6C7;
+  --color-flame-500: #2B292A;
+  --color-flame-600: #1D1B1C;
+  --color-flame-700: #111011;
+  --color-tomato-500: #D23C2E;
+  --color-tomato-100: #FBE2DF;
+  --color-basil-500: #2F8F5B;
+  --color-basil-100: #DFF1E6;
+  --color-ink: #1D1B1C;
+  --color-ink-2: #585657;
+  --color-ink-3: #8E8C8D;
+  --font-display: "Fondamento", Georgia, "Times New Roman", serif;
+  --display-scale: 0.86;
+  --display-tracking: 0;
+  --display-case: none;
+  --display-weight: 400;
+  --motif: radial-gradient(circle, rgba(10, 199, 142, 0.30) 2.2px, transparent 2.4px) 0 0 / 16px 16px, linear-gradient(#DDF6EC, #DDF6EC);
+  --glass-bg: rgba(244, 247, 245, 0.82);
+ }
+/* self-hosted display font (latin + latin-ext for Serbian diacritics); /stefan-fast-food/ is filled in by vite.config.ts */
+@font-face {
+  font-family: 'Fondamento';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/stefan-fast-food/fonts/fondamento-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Fondamento';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/stefan-fast-food/fonts/fondamento-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+    <script type="module" crossorigin src="/stefan-fast-food/assets/main-CNY_M69L.js"></script>
+    <link rel="stylesheet" crossorigin href="/stefan-fast-food/assets/main-CQ3Fmxgd.css"><script id="vite-plugin-pwa:register-sw" src="/stefan-fast-food/registerSW.js"></script></head>
+  <body>
+    <div id="root"><div class="splash"><span class="splash-name">KUHINJA</span><span class="splash-sub">Stefan · Učitavanje</span></div></div>
+  </body>
+</html>

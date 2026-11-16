@@ -1,0 +1,26 @@
+{
+  "id": "/stefan-fast-food/kuhinja",
+  "name": "Stefan · Kuhinja",
+  "short_name": "Kuhinja",
+  "description": "Portal za kuhinju — Stefan Fast Food",
+  "lang": "sr",
+  "start_url": "/stefan-fast-food/kuhinja",
+  "scope": "/stefan-fast-food/kuhinja",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#232122",
+  "background_color": "#232122",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

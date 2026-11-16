@@ -1,0 +1,46 @@
+{
+  "info": {
+    "id": "stefan",
+    "guideKey": "sf-guide-done",
+    "storageKey": "stefan-fast-food",
+    "fulfillments": [
+      "delivery",
+      "pickup"
+    ],
+    "sizes": 9,
+    "name": "Stefan Fast Food",
+    "address": "Ljubinke Bobić 26a (pijaca Bežanijska kosa), Novi Beograd",
+    "phone": "064 444 83 64",
+    "hours": "Svaki dan 07:00 – 23:30",
+    "instagram": "",
+    "deliveryFee": 250,
+    "cardPayment": [],
+    "locations": 0,
+    "categories": 14,
+    "menu": "static",
+    "menuItems": 194,
+    "closedToday": false,
+    "soldOutToday": [],
+    "orders": "local",
+    "tenantPath": "stefan",
+    "emulator": false
+  },
+  "style": {
+    "bg": "#F4F7F5",
+    "card": "#FFFFFF",
+    "inset": "#E8EEEA",
+    "line": "#D5DED8",
+    "primary": "#0AC78E",
+    "onPrimary": "#1D1B1C",
+    "dark": "#232122",
+    "dark2": "#2B292A",
+    "cta": "#2B292A",
+    "ink": "#1D1B1C",
+    "ink2": "#585657",
+    "font": "\"Fondamento\", Georgia, \"Times New Roman\", serif",
+    "tracking": "0",
+    "case": "none",
+    "weight": "400",
+    "scale": "0.86"
+  }
+}
